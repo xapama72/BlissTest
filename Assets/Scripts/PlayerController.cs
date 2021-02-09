@@ -41,5 +41,10 @@ public class PlayerController : MonoBehaviour
             Destroy(die, 3f);
             GameObject.Find("GameManager").GetComponent<UIController>().ShowGameOver();
         }
+        //Touch a person
+        if (other.tag == "Person")
+        {
+            other.gameObject.transform.SetParent(transform);
+        }
     }
 }

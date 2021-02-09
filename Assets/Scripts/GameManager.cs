@@ -28,7 +28,8 @@ public class GameManager : MonoBehaviour
         foreach (var road in roadsLevel)
         {
             zOffSet += road.GetComponent<Road>().zOffeset;
-            Instantiate(road, new Vector3(0, 0, zOffSet), Quaternion.identity);
+            GameObject ro = Instantiate(road, new Vector3(0, 0, zOffSet), Quaternion.identity);
+            ro.GetComponent<Road>().SpawnPersons();
         }
     }
 
