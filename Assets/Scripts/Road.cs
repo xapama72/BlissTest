@@ -5,7 +5,8 @@ using UnityEngine;
 public class Road : MonoBehaviour
 {
     public float zOffeset;
-    
+    public float difficulty;
+
     // Start is called before the first frame update
     void Start()
     {

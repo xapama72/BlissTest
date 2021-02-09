@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zOffeset: 18
+  difficulty: 3
 --- !u!1001 &1828000222637325318
 PrefabInstance:
   m_ObjectHideFlags: 0

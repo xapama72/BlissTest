@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
-{
+{    
+    [Header("Level")]
     public List<GameObject> roadsLevel;
+
     private Transform player;
 
     // Start is called before the first frame update
@@ -16,6 +18,8 @@ public class GameManager : MonoBehaviour
             SpawnRoads();
         }
         SetPlayer();
+        Camera.main.GetComponent<CameraController>().isPlayerMoving = true;
+        Camera.main.GetComponent<CameraController>().isPlayerFighting = false;
     }
 
     private void SpawnRoads()
@@ -32,11 +36,5 @@ public class GameManager : MonoBehaviour
     {
         GameObject firstRoad = roadsLevel[0];
         player.position = new Vector3(firstRoad.transform.position.x, firstRoad.transform.position.y + 2f, firstRoad.transform.position.z + firstRoad.GetComponent<Road>().zOffeset);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
