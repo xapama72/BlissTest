@@ -17,5 +17,5 @@ public class Road : MonoBehaviour
             Vector3 newPos = new Vector3(transform.position.x + i + Random.Range(-2, 2f), transform.position.y + 2f, transform.position.z + i + Random.Range(-2, 2f)); 
             Instantiate(personPrefab, newPos, Quaternion.identity);
         }
-    }
+    }    
 }

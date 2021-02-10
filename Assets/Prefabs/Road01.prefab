@@ -47,8 +47,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zOffeset: 18
   difficulty: 3
-  personsCount: 0
-  personPrefab: {fileID: 278396380977374683, guid: 5907f9db50fc1b5408ad2556ef793d4a,
+  personsCount: 1
+  personPrefab: {fileID: 278396380977374683, guid: 84377db9f1710e44a8ddbb3515025f18,
     type: 3}
 --- !u!1001 &1828000222637325318
 PrefabInstance:
